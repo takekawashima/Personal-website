@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="style/sidebar.css" />
+  <link rel="stylesheet" href="style/navbar.css" />
+  <link rel="stylesheet" href="style/tab.css" />
+  <link rel="stylesheet" href="style/education_tab.css" />
+  <link rel="stylesheet" href="style/contact_tab.css" />
+  <link rel="stylesheet" href="style/project_tab.css" />
+  <link rel="stylesheet" href="style/research_tab.css" />
+  <link rel="stylesheet" href="style/extracurricular_tab.css" />
+
+  <title>Portfolio</title>
+
+  
+</head>
+<body>
+  
+  <!---NAVBAR-->
+  <nav>
+    <div class="left"> 
+      <a href="/">Take Kawashima</a>
+    </div>
+    <div class="right">
+      <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/taketsugu-kawashima-18a465233" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+
+      <a href="mailto:taketsugu.kawashima@gmail.com">
+        <i class="fa-solid fa-envelope icon-closed"></i>
+        <span>Email</span>
+      </a>
+
+
+    </div>
+  </nav>
+
+
+  <!--Sidebar-->
+  <div class="sidebar">
+    <div class="headshot">
+      <img src="images/headshot.jpg" alt="Take Kawashima" />
+    </div>
+    <div class="sidebar-text">
+      <h3>Take Kawashima</strong></h3>
+      <div class="bio">
+        <div class="bio-item">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <p>Engineering Physics Major</p>
+        </div>
+        <div class="bio-item">
+          <i class="fa-solid fa-building-columns"></i>
+          <p>University of Toronto</p>
+        </div>
+        <div class="bio-item">
+          <i class="fa-solid fa-location-pin"></i>
+          <p>Toronto, Canada</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+  <main class="main-content">
+    <!--Section 1: Hero-->
+    <section class="hero-section">
+      <div class="text">
+        <span>
+          <h2>Hi, I'm Take 👋</h2>
+          <p>Welcome to my personal website! I recently completed my third year of engineering studies at the University of Toronto in April and am currently seeking a 12- to 16-month co-op opportunity. Feel free to explore and don’t hesitate to get in touch!</p>
+        </span>
+        <!-- Tab Buttons -->
+    </section>
+
+    <section class="tab-section">
+      <div class="tabs">
+        <button class="tab-button active" data-tab="education">Education</button>
+        <button class="tab-button" data-tab="projects">Projects</button>
+        <button class="tab-button" data-tab="research">Research</button>
+        <button class="tab-button" data-tab="extracurricular">Extracurricular</button>
+        <button class="tab-button" data-tab="contact">Contact</button>
+      </div>
+      </div>
+    </section>
+
+  <!-- Tab Content: Education (includes courses) -->
+<div class="tab-content active" id="education">
+
+  <section class="education-section">
+    <h2>Education</h2>
+    <p>
+      I am currently enrolled in the 
+      <a href="https://engsci.utoronto.ca/" target="_blank" class="hover-underline"><strong>Engineering Science</strong></a> 
+      program at the University of Toronto — a flagship program known for its rigorous training in theoretical mathematics and physics. 
+      Within this program, I am specializing in 
+      <a href="https://engsci.utoronto.ca/program-options/engineering-physics/" target="_blank" class="hover-underline"><strong>Engineering Physics</strong></a>, 
+      with a strong emphasis on quantum mechanics and electronic systems such as semiconductor devices. I am also interested in quantum information/computers.
+    </p>
+    <hr class="section-divider" />
+    <div>
+      <div class="education-item">
+        <h3>University of Toronto</h3>
+        <ul>
+          <li>Bachelor of Applied Science in Engineering Science (BASc)</li>
+          <li>Major: Engineering Physics</li>
+          <li>Expected Graduation: 2027 (2026 + 1 year due to Co-op)</li>
+        </ul>
+      </div>
+      <div class="education-item">
+        <h3>American School in Japan</h3>
+        <ul>
+          <li>High School Diploma</li>
+          <li>2019–2022</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="awards-section">
+    <h2>Awards</h2>
+    <hr class="section-divider" />
+    <div class="awards">
+      <div class="awards-item">
+        <h3>Ian and Shirley Rowe Innovation and Community Impact Award (2023)</h3>
+        <ul>
+          <li>First place at the 1st year engineering science design competition</li>
+        </ul>
+      </div>
+      <div class="awards-item">
+        <h3>Engineering International Scholar Award (2022)</h3>
+        <ul>
+          <li>Recognized for outstanding academic and extracurricular merit</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="courses-section">
+    <h2>Past Courses</h2>
+    <hr class="section-divider" />
+    <div class="courses">
+      <div class="course-item">
+        <h3>Physics/Mathematics</h3>
+        <ul>
+          <li>Quantum Mechanics 😍</li>
+          <li>Advanced Classical Mechanics</li>
+          <li>Quantum Information 😍</li>
+          <li>Quantum Materials 😍</li>
+          <li>Thermodynamics</li>
+          <li>Advanced Physics Lab</li>
+          <li>Calculus I–III</li>
+          <li>Linear Algebra</li>
+          <li>Complex Analysis</li>
+          <li>Probability and Statistics</li>
+        </ul>
+      </div>
+      <div class="course-item">
+        <h3>Computer Science</h3>
+        <ul>
+          <li>Introduction to Computer Programming (Python)</li>
+          <li>Computer Algorithms and Data Structures (Python, C)</li>
+          <li>Applied Fundamentals of Deep Learning (Python, PyTorch) 😍</li>
+        </ul>
+      </div>
+      <div class="course-item">
+        <h3>Electronics</h3>
+        <ul>
+          <li>Semiconductor Electronics Devices 😍</li>
+          <li>Electromagnetic Fields</li>
+          <li>Electronics (LTspice) 😍</li>
+          <li>Digital and Computer System (Verilog, FPGA)</li>
+        </ul>
+      </div>
+      <div class="course-item">
+        <h3>Others</h3>
+        <ul>
+          <li>Engineering Design</li>
+          <li>Engineering Economics</li>
+          <li>Global Engineering</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+
+
+
+
+    <!--Tab content: Projects -->
+  
+    <div class="tab-content" id="projects">
+      <section id="projects-sec" class="projects-section">
+        <h2>Projects</h2>
+        <hr class="section-divider" />
+        <!-- Add your project content here -->
+
+        <!-- Praxis I-->
+        <div class="praxis2">
+          <h3>Praxis II Engineering Design Project (2023)</h3>
+          <div class="research-img">
+            <div class="carousel-container">
+              <button class="carousel-btn prev">&#10094;</button>
+              <div class="carousel-track">
+                <img src="images/praxis2_poster.jpg" alt="Poster" class="zoomable" id="zoomImage"/>
+                <img src="images/praxis2_group.jpg" alt="Group Photo" />
+              </div>
+              <button class="carousel-btn next">&#10095;</button>
+            </div>
+          </div>
+
+          <!-- Modal for Zoom -->
+          <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImg">
+          </div>
+        
+          <div class="description">
+            <p>
+              As part of the Praxis I Engineering Design Project, our team partnered with the Swim Drink Fish (SDF) Toronto Hub, a non-profit organization that monitors water quality across Canada. After attending a winter field session with SDF, we identified key pain points in their data collection process—specifically, the vulnerability of paper-based forms to wet weather and the time-consuming nature of manually entering observations into a digital database.
+            </p>
+            <p>
+
+              To address these challenges, we developed SlideXCell, an integrated physical-digital prototype of the solution. The system features a waterproof slider interface for recording environmental observations on-site, paired with a custom-built mobile app that digitally scans and logs slider input. Unlike existing solutions that address each problem independently, our design tackles both challenges simultaneously to streamline fieldwork.
+            </p>
+            <p>
+              The design was finalized through regular feedback from SDF and iterative prototyping, we ensured compatibility with their existing data collection formats and workflows. 
+            </p>
+            <p>
+              Our team was awarded first place in the design competition, ranking highest among all first-year Engineering Science teams.
+            </p>
+
+          </div>
+
+
+
+        </div>
+      </section>
+    </div>
+
+
+
+    <!-- Tab Content: Research -->
+    <div class="tab-content" id="research">
+      <section id="research-sec" class="research-section">
+        <h2>Research</h2>
+        <hr class="section-divider" />
+        <!-- Add your research content here -->
+
+        <!-- Wunch's Group -->
+        <div class="wunch">
+          <h3>Wunch's Group — 
+            <a href="https://www.atmosp.physics.utoronto.ca/GTA-Emissions/About/" target="_blank" class="hover-underline"><strong>GTA Urban Emsissions Project</strong></a> 
+            (Summer 2024)
+          </h3>
+          <div class="research-img">
+            <div class="image-wrapper">
+              <img src="images/take_riding_bike.png" alt="wunch_research" />
+              <div class="image-description">
+                Conducting greenhouse gas measurements at Tommy Thompson Park using a mobile instrument.
+              </div>
+            </div>
+          </div>
+          
+          <div class="description">
+            <p>
+              As part of the GTA Urban Emissions Project under Dr. Debra Wunch, I contributed to identifying methane emissions across Toronto by conducting mobile greenhouse gas measurements and improving the mobile laboratory’s data collection software. My work led to the detection of methane hotspots, such as storm drains and the Ashbridges Bay Treatment Plant, and strengthened my skills in Python, data analysis with Pandas, and software-hardware integration in field research.
+            </p>
+
+          </div>
+        </div>
+        <!-- Walker's Group -->
+        <div class="walker">
+          <h3>
+            Walker's Group —<a href="https://eureka.physics.utoronto.ca" target="_blank" class="hover-underline"><strong>Canadian Arctic ACE/OSIRIS Validation Campaign</strong></a> (Summer 2024) 
+          </h3>
+
+
+          <div class="description">
+            <p>
+              During the summer of 2024, I participated in the Canadian Arctic ACE/OSIRIS Validation Campaigns to investigate factors influencing the variability in ozonesonde burst altitudes using nearly two decades of atmospheric data. Leveraging Python and Pandas, I analyzed correlations between burst altitude and environmental conditions such as tropopause temperature, wind, and vertical ascent rate. This project strengthened my skills in large-scale data processing and highlighted the complex interplay of environmental and mechanical factors in high-altitude balloon measurements under extreme Arctic conditions.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Arakawa's Group -->
+        <div class="arakawa">
+          <h3>
+            Arakawa's Group — Genome Research (Summer 2023)
+          </h3>
+
+          <div class="research-img">
+            <div class="image-wrapper">
+              <img src="images/bioscience_park.png" alt="keio_research" />
+            </div>
+          </div>
+
+          <div class="description">
+            <p>
+              During my summer research at the Institute for Advanced Biosciences, Keio University, I contributed to the genome sequencing and analysis of Actinoplanes sichuanensis, a bacterium with potential for producing acarbose—an anti-diabetic compound. My work involved wet lab techniques such as bacterial culturing, high-molecular-weight DNA extraction, and quality verification using TapeStation. I also gained hands-on experience with genome assembly, error correction, and annotation using bioinformatics tools like Canu, Medaka, and DFAST within a Linux environment. Additionally, I utilized BLAST and UniProt databases to identify genes associated with acarbose biosynthesis, strengthening my skills in both molecular biology and computational genomics.
+            </p>
+            <p>
+              Check out the <a href="https://journals.asm.org/doi/10.1128/mra.00662-23" target="_blank" class="hover-underline"><strong>announcement</strong></a>  I published in the journal of the American Society for Microbiology.
+            </p>
+          </div>
+        </div>
+        
+
+      </section>
+    </div>
+
+
+    <!-- Tab Content: Extracurricular -->
+    <div class="tab-content" id="extracurricular">
+      <section id="extracurricular-sec" class="extracurricular-section">
+        <h2>Fun Stuff</h2>
+        <hr class="section-divider" />
+        <!-- Add your extracurricular content here -->
+        <p>
+          I am also the captain of the <a href="https://uoftsailing.squarespace.com/comp/about" target="_blank" class="hover-underline"><strong>UofT Sailing Team</strong></a>, one of the teams in the Canadian Intercollegiate Sailing Association (CICSA). I have been sailing competitively since I was 10 years old (Optis, i420s), and have competed in numerous regattas around the world. 
+        </p>
+        <p>
+          This past season, I competed in the following regattas: CICSA Can/Ams (1st), CICSA Keelboat Nationals (3rd), CICSA Ontario Regionals (3rd), CICSA Fleet Racing Nationals (2nd), and CICSA Match Racing Nationals (1st).
+        </p>
+        <img src="images/sailing.png" alt="sailing" />
+
+      </section>
+    </div>
+
+
+    <!-- Tab Content: Contact -->
+    <div class="tab-content" id="contact">
+      <section id="contact-sec" class="contact-section">
+        <h2>Contact</h2>
+        <hr class="section-divider" />
+      
+        <div class="contact-group">
+          <p>Feel free to reach out via email:</p>
+          <p>
+            <a href="mailto:taketsugu.kawashima@gmail.com" class="contact-email">
+              taketsugu.kawashima@gmail.com
+            </a>
+          </p>
+        </div>
+      </section>
+    </div>
+
+
+
+    
+</main>
+
+<!-- Tab Script -->
+<script>
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const target = button.getAttribute('data-tab');
+
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      tabContents.forEach(content => {
+        content.classList.remove('active');
+        if (content.id === target) {
+          content.classList.add('active');
+        }
+      });
+    });
+  });
+</script>
+
+<!--Carousel feature-->
+<script>
+  const track = document.querySelector('.carousel-track');
+  const prevBtn = document.querySelector('.carousel-btn.prev');
+  const nextBtn = document.querySelector('.carousel-btn.next');
+  const images = document.querySelectorAll('.carousel-track img');
+  let currentIndex = 0;
+
+  function updateCarousel() {
+    const offset = -currentIndex * 500; // image width
+    track.style.transform = `translateX(${offset}px)`;
+  }
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+    updateCarousel();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+    updateCarousel();
+  });
+</script>
+
+<!--Zoom Feature-->
+<script>
+  const modal = document.getElementById("imageModal");
+  const zoomImage = document.getElementById("zoomImage");
+  const modalImg = document.getElementById("modalImg");
+  const closeBtn = document.querySelector(".close");
+
+  zoomImage.addEventListener("click", () => {
+    modal.style.display = "block";
+    modalImg.src = zoomImage.src;
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+</script>
+
+</body>

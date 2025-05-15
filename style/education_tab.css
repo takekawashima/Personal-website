@@ -1,0 +1,94 @@
+/* Section 2: Education */
+
+.education-section{
+  padding:0 50px;
+  margin-bottom: 50px;
+}
+
+.education-section h2{
+  text-align: left;
+  font-size: 35px;
+}
+
+.education-item{
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.education-item ul {
+  padding-left: 30px; /* Indent bullets */
+  margin-top: 8px;
+}
+
+.education-item li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+/* Awards */
+.awards-section{
+  padding: 0 50px;
+  margin-bottom: 50px;
+}
+.awards-section h2 {
+  text-align: left;
+  font-size: 35px;
+}
+.awards-section .text{
+  text-align: left;
+  font-size: 20px;
+}
+.awards-item{
+  align-items: center;
+  margin-bottom: 20px;
+}
+.awards-item ul {
+  padding-left: 30px; /* Indent bullets */
+  margin-top: 8px;
+}
+.awards-item li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+/* Section 3: Past Courses */
+.courses-section{
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.courses-section h2 {
+  text-align: left;
+  font-size: 35px;
+}
+
+.course-item{
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.course-item ul {
+  padding-left: 30px; /* Indent bullets */
+  margin-top: 8px;
+}
+
+.course-item li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+
+
+@media (max-width: 687px){
+  body {
+    flex-direction: column; /* Sidebar disappears, so stack vertically now */
+  }
+
+  .main-content {
+    margin: 0;
+    padding: 0 20px;
+  }
+}

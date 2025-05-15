@@ -1,0 +1,108 @@
+/* Fixed Sidebar (Right) */
+/*
+.sidebar {
+  position: relative;
+  width: 300px;
+  min-width: 180px;
+  max-width: 300px;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--sidebar-background-color);
+  z-index: 1;
+  flex-shrink: 0;
+}*/
+
+.sidebar {
+  position: fixed;      /* Stick in place while scrolling */
+  top: 80px;               /* Stick to top of viewport */
+  left: 0;              /* Stick to left side */
+  width: 300px;
+  min-width: 180px;
+  max-width: 300px;
+  height: 100vh;        /* Full viewport height */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--sidebar-background-color);
+  z-index: 1000;        /* On top of other content */
+  overflow-y: auto;     /* Scroll sidebar if needed */
+  flex-shrink: 0;
+}
+
+
+
+
+.sidebar .headshot img {
+  width: 100%;     /* Make it responsive within sidebar */
+  max-width: 200px; /* Prevent it from stretching too wide */
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.sidebar-text h3 {
+  font-size: 18px;
+  color: var(--text-color);
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.sidebar .sidebar-text p {
+  font-size: 14px;
+  color: var(--text-color);
+  line-height: 1.4;
+}
+
+.bio {
+  margin-top: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.bio-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.bio-item i {
+  margin-right: 8px;
+  color: var(--text-color); /* Or another suitable color */
+  font-size: 14px;
+}
+
+.bio-item p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+
+/* Shrink the sidebar below 1024px */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 280px;
+  }
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: 240px;
+  }
+}
+
+/* Hide the sidebar entirely below 687px */
+@media (max-width: 687px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    margin-right: 0; /* remove sidebar space */
+    padding: 0 20px;
+  }
+}

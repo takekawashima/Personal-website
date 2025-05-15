@@ -1,0 +1,74 @@
+/* === Research Section === */
+.research-section {
+  padding: 0 50px;
+  margin-bottom: 50px;
+}
+
+.research-section h2 {
+  font-size: 35px;
+  text-align: left;
+}
+
+.research-section h3 {
+  margin: 10px 0;
+  margin-bottom: 30px;
+}
+
+.research-section .description {
+  margin: 30px 0;
+}
+
+.research-section .description p{
+  margin-bottom: 10px;
+}
+
+/* === Image Container (Wunch Image) === */
+.research-img {
+  display: flex;
+  justify-content: center;
+  flex: 2;
+}
+
+
+
+/* === Hoverable Image with Description Overlay === */
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.image-wrapper img {
+  width: 500px;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.image-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-wrapper:hover .image-description {
+  opacity: 1;
+}
+
+@media (max-width: 687px) {
+  .image-wrapper img {
+    width: 400px;
+  }
+
+
+}

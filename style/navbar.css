@@ -1,0 +1,70 @@
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 80px;
+  line-height: 80px;
+  transition: padding 0.5s ease;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1100;
+
+  background-color: var(--background-color);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .left a {
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 600;
+  transition: font-size 0.5s ease, margin 0.5s ease, background-color 0.5s ease, color 0.5s ease, padding 0.5s ease;
+  line-height: 1; /* reset inherited line height */
+}
+
+nav .left a:hover {
+  color: var(--background-color);
+  background-color: var(--text-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav .right a {
+  color: var(--text-color);
+  margin: 0 10px;
+  font-size: 20px;
+  transition: font-size 0.5s ease, margin 0.5s ease, background-color 0.5s ease, color 0.5s ease, padding 0.5s ease;
+}
+
+nav .right a:hover {
+  color: var(--background-color);
+  background-color: var(--text-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav .right a:last-child{
+  color: var(--background-color);
+  background-color: var(--text-color);
+  padding: 5px 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+  
+
+nav .right a:last-child:hover{
+  color: var(--text-color);
+  background-color: var(--background-color);
+  padding: 5px 10px;
+  border: 2px solid var(--text-color);
+  border-radius: 5px;
+}
+
+
+nav .right a span {
+  margin-left: 5px;
+}

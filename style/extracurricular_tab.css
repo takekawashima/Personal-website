@@ -1,0 +1,23 @@
+/* Extracurricular Section */
+
+.extracurricular-section{
+  padding:0 50px;
+  margin-bottom: 50px;
+}
+
+.extracurricular-section h2{
+  text-align: left;
+  font-size: 35px;
+}
+
+.extracurricular-section p{
+  margin-bottom: 30px;
+}
+
+.extracurricular-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto; /* optional: center and add spacing */
+  border-radius: 8px; /* optional: for visual consistency */
+}

@@ -1,0 +1,54 @@
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+}
+
+
+.tab-button {
+  padding: 5px 10px;
+  margin: 0 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-color);
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 
+    font-size 0.3s ease,
+    margin 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease,
+    padding 0.3s ease,
+    transform 0.3s ease;  /* added transition for scaling */
+}
+
+.tab-button:hover {
+  color: var(--background-color);
+  background-color: var(--text-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  transform: scale(1.08);  /* scale up on hover */
+}
+
+.tab-button.active {
+  color: var(--background-color);
+  background-color: var(--text-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+
+.tab-content {
+  display: none;
+  padding: 0 50px;
+}
+
+.tab-content.active {
+  display: block;
+}
